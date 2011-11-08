@@ -1,0 +1,41 @@
+#container{width:710px;
+margin-left:auto;
+margin-right:auto;
+margin-top:3em;}
+
+
+
+header nav{float:right;
+white-space:nowrap;
+}
+header nav ul{margin:0;padding:0;}
+header nav ul li{list-style-type:none;
+text-decoration:none;
+display:inline-block;
+}
+
+
+
+
+
+
+/* Round corners */
+
+.round{
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+}
+
+/* messages */
+.flash{color:green;}
+
+
+
+/* lists */
+.notes{list-style-type:none;
+
+}
+.students{list-style-type:none;
+
+}

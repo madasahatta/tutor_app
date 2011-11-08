@@ -1,9 +1,9 @@
 class AddStudentIdToNotes < ActiveRecord::Migration
   def self.up
-    add_column :notes, :Student_Id, :integer
+    add_column :notes, :student_Id, :integer
   end
 
   def self.down
-    remove_column :notes, :Student_Id
+    remove_column :notes, :student_Id
   end
 end

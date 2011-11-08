@@ -1,8 +1,12 @@
 TutorApp::Application.routes.draw do
-  resources :students, :only => [:new,:create]
+  get "notes/new"
+
+  resources :students
   resources :notes, :only => [:new, :create]
   
-  root :to => 'students#new'
+  root :to => 'notes#new'
+  match '/AddNote', :to => 'notes#new'
+  match '/AddStudent', :to => 'students#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

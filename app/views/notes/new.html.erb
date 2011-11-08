@@ -1,0 +1,22 @@
+<h1>Add Note</h1>
+
+	<%= form_for(@note) do |f| %>
+		<%= render 'shared/error_messages', :object => f.object %>
+	  
+	  
+	  
+	  <div class="field">
+	
+		 <%= f.collection_select( :student_id, @students, :id, :name, :prompt => true) %> 
+	  </div>
+	  
+	  <div class="field">
+		<%= f.label :note %><br />
+		<%= f.text_field :note %>
+	  </div>
+	 
+	  
+	  <div class="actions">
+		<%= f.submit "Add Note!" %>
+	  </div>
+	<% end %>
