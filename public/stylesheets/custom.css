@@ -11,8 +11,13 @@ white-space:nowrap;
 header nav ul{margin:0;padding:0;}
 header nav ul li{list-style-type:none;
 text-decoration:none;
+
 display:inline-block;
+margin-left:1em;
 }
+
+header nav ul li a{
+font-size:1.2em;}
 
 
 
@@ -34,8 +39,18 @@ border-radius:10px;
 
 /* lists */
 .notes{list-style-type:none;
+font-size:2em;
+background-color:#eee;
+width:400px;
+Margin-bottom:10px;
+padding-left:5px;
 
 }
 .students{list-style-type:none;
-
+Margin-bottom:10px;
+font-size:1.2em;
 }
+
+.float_right{
+float:right;
+margin-right:1em;}

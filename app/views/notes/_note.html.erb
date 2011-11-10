@@ -1,3 +1,3 @@
 <li class = "notes">
-	<%= note.note %>
+	<%= note.note %> <span class = "float_right"><%= link_to 'Delete', note, :method => :delete, :confirm => "Are you Sure?", :title => "Delete #{note.note}" %></span>
 </li>

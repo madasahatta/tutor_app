@@ -2,7 +2,7 @@ TutorApp::Application.routes.draw do
   get "notes/new"
 
   resources :students
-  resources :notes, :only => [:new, :create]
+  resources :notes, :only => [:new, :create, :destroy]
   
   root :to => 'notes#new'
   match '/AddNote', :to => 'notes#new'

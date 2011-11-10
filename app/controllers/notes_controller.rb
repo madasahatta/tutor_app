@@ -15,4 +15,9 @@ class NotesController < ApplicationController
 		render 'new'
 	end
   end
+  def destroy
+	Note.find(params[:id]).destroy
+	flash[:Success] = "Note deleted"
+	redirect_to root_path
+  end
 end
