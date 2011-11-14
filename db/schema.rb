@@ -10,13 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111112002410) do
+ActiveRecord::Schema.define(:version => 20111114234829) do
 
   create_table "notes", :force => true do |t|
     t.string   "note"
     t.integer  "student_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "important"
   end
 
   create_table "students", :force => true do |t|
