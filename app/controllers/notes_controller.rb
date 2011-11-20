@@ -2,6 +2,7 @@ class NotesController < ApplicationController
   def new
 	@note = Note.new
 	@students = Student.find(:all)
+	@notes = Note.find_all_by_important(true)
   end
 
   def create

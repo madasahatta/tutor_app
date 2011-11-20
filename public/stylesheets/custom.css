@@ -1,4 +1,5 @@
-#container{width:710px;
+#container{width:80%;
+min-width:600px;
 margin-left:auto;
 margin-right:auto;
 margin-top:3em;}
@@ -33,7 +34,9 @@ border-radius:10px;
 }
 
 /* messages */
-.flash{color:green;}
+.flash{color:green;
+font-size:2em;
+margin-left:200px;}
 
 
 

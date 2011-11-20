@@ -9,6 +9,22 @@ class StudentsController < ApplicationController
 	@title = 'Add Student'
 	@student = Student.new
   end
+  
+  def edit
+	@title = 'Edit Student'
+	@student = Student.find(params[:id])
+  end
+  
+  def update
+	@student = Student.find(params[:id])
+	if @student.update_attributes(params[:student])
+		flash[:success] = "Student updated"
+		redirect_to root_path
+	else
+		@title = 'Edit User'
+		render 'edit'
+	end
+  end
 
   def create
 	@student = Student.new(params[:student])
