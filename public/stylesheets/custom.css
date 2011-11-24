@@ -44,7 +44,7 @@ margin-left:200px;}
 .notes{list-style-type:none;
 font-size:2em;
 background-color:#eee;
-width:400px;
+width:600px;
 Margin-bottom:10px;
 padding-left:5px;
 
@@ -58,8 +58,28 @@ font-size:1.2em;
 float:right;
 margin-right:1em;}
 
+div.todo{
+padding:20px;
+background-color:#eee;
+margin-top:80px;
+margin-left:auto;
+margin-right:auto;
+color:red;
+}
+div.todo ul li{
+margin-left:0;
+}
+
 /* Forms */
 
 .dropdown{height:15px;
 color:red;
 font-size:1.2em;}
+
+/* Round corners */
+
+.round{
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+}
